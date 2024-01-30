@@ -21,10 +21,7 @@ jobs:
       # Publish the site
       - name: Publish
         run: dotnet publish BlazorApp1.sln -c:Release -o:public -p:GHPages=true
-
-      # Fixes for gh-pages
-      - name: Change base-tag in index.html from / to BlazorApp1
-        run: sed -i 's/<base href="\/">/<base href="\/webassembly\/" \/>/g' public/wwwroot/index.html
+        
   
       # Deploy the site
       - name: Deploy

@@ -18,6 +18,13 @@
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.FluentUI.AspNetCore.Components" />
+    <TrimmerRootAssembly Include="Microsoft.FluentUI.AspNetCore.Components.Icons" />
+  </ItemGroup>
+
+
+
 
   <ItemGroup>
     <Folder Include="Data\" />

@@ -24,7 +24,7 @@ jobs:
 
       # Fixes for gh-pages
       - name: Change base-tag in index.html from / to BlazorApp1
-        run: sed -i 's/<base href="\/" \/>/<base href="\/webassembly\/" \/>/g' public/wwwroot/index.html
+        run: sed -i 's/<base href="\/">/<base href="\/webassembly\/" \/>/g' public/wwwroot/index.html
   
       # Deploy the site
       - name: Deploy
